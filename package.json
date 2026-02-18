@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "deploy:pages": "npx wrangler pages deploy dist --project-name=pbm-campaigns",
     "lint": "eslint .",
     "preview": "vite preview"
   },
