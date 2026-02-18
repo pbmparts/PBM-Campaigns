@@ -1,0 +1,25 @@
+.campaign-ended {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.campaign-ended-card {
+  width: calc(100% - 50px);
+  margin-top: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.campaign-ended-card h1 {
+  font-family: 'Lalezar';
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.campaign-ended-card p {
+  font-family: 'Vazir';
+}

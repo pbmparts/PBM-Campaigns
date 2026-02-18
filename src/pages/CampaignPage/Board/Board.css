@@ -1,0 +1,19 @@
+.board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Lalezar';
+}
+.board-head-title {
+    margin-bottom: 20px;
+}
+.board-head-title , .board-foot-title {
+    font-size: 50px;
+    color: #E52229;
+}
+.board-number {
+    font-size: 250px;
+    color: #eee;
+}

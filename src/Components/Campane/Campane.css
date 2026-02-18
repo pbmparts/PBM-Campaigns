@@ -1,0 +1,57 @@
+.campane-item {
+    width: -webkit-fill-available;
+    background-color: #3B465E;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.camapne-item-title {
+    font-size: 20px;
+    margin: 10px;
+    font-family: 'Lalezar';
+}
+
+.campane-item-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px !important;
+
+}
+
+.campane-item-btns button {
+    font-family: 'Vazir';
+    font-size: 14px;
+}
+
+.campane-item-end {
+    height: 100%;
+    padding: 10px 20px;
+    width: 80%;
+    background-color: #45A26A;
+    color: #eee;
+    border: none;
+    border-radius: 10px;
+}
+
+.campane-item-delete {
+    height: -webkit-fill-available;
+    padding: 5px 10px;
+    width: 20%;
+    border: none;
+    border-radius: 10px;
+    background-color: #DF7E81;
+}
+.campane-item-download {
+    height: -webkit-fill-available;
+    padding: 5px 10px;
+    width: 20%;
+    border: none;
+    border-radius: 10px;
+    background-color: #7e90df;
+}
+
+.campane-item-disable {
+    background-color: gray !important;
+}

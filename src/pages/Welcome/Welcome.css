@@ -1,0 +1,61 @@
+.welcome {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+.welcome-form {
+    width: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-input-box {
+    width: calc(100% - 50px);
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #B0B0B0;
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+}
+#welcome-name , #welcome-phone {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    margin-right: 6px;
+    font-family: 'Vazir';
+    color: #eee;
+}
+#welcome-phone {
+    text-align: right;
+    direction: ltr;
+}
+#welcome-name::placeholder , #welcome-phone::placeholder {
+    font-size: 14px !important;
+}
+#welcome-phone::placeholder {
+    text-align: right;
+    direction: rtl;
+}
+.welcome-form label {
+    margin-left: 100px;
+    font-family: 'Lalezar';
+    font-size: 18px;
+}
+.welcome-form button {
+    background-color: #E52229;
+    color: #eee;
+    width: calc(100% - 100px);
+    padding:  8px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Lalezar';
+    font-size: 18px;
+    width: calc(100% - 20px);
+}
