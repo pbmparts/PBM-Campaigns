@@ -140,18 +140,24 @@
     width: 20px;
 }
 .products-container {
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
 }
 
 .products {
     flex: 1;
+    padding-bottom: 190px;
 }
 
 .products-footer {
-    position: sticky;
+    position: fixed;
     bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(500px, 100%);
+    z-index: 30;
+    box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.2);
 }
 .footer-progressbar {
     width: calc(100% - 50px);
@@ -258,6 +264,10 @@
         padding: 8px 10px;
     }
 
+    .products {
+        padding-bottom: 180px;
+    }
+
     .footer-progressbar {
         width: 100%;
         margin-bottom: 12px;
@@ -308,6 +318,10 @@
 
     .packages-table {
         min-width: 390px;
+    }
+
+    .products {
+        padding-bottom: 170px;
     }
 }
 
