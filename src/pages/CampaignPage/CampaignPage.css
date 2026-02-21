@@ -87,28 +87,24 @@
     background-color: rgba(69, 162, 106, 0.18);
 }
 
-/* Footer */
-@media screen and (min-width: 480px) {
-    .products-footer {
-        max-width: 500px;
-        width: calc(100% - 50px);
-        border-radius: 10px;
-    }
-}
-
 .products-footer {
     position: fixed;
-    margin-top: 100px;
     bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 500px;
     background-color: #fff;
     width: 100%;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 10px;
     margin: 0 auto;
+    z-index: 40;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -8px 18px rgba(0, 0, 0, 0.22);
+    padding-bottom: calc(10px + env(safe-area-inset-bottom));
 }
 
 .products-footer button {
@@ -147,17 +143,7 @@
 
 .products {
     flex: 1;
-    padding-bottom: 190px;
-}
-
-.products-footer {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(500px, 100%);
-    z-index: 30;
-    box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.2);
+    padding-bottom: 220px;
 }
 .footer-progressbar {
     width: calc(100% - 50px);
@@ -201,6 +187,8 @@
 }
 .progress-bar-title {
     margin-bottom: 8px;
+    line-height: 1.7;
+    font-size: 14px;
 }
 
 .current-package-banner {
@@ -260,43 +248,39 @@
         padding: 7px 8px;
     }
 
-    .products-footer {
-        padding: 8px 10px;
-    }
-
     .products {
-        padding-bottom: 180px;
+        padding-bottom: 210px;
     }
 
     .footer-progressbar {
         width: 100%;
         margin-bottom: 12px;
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .progress-bar-title {
-        font-size: 12px;
+        font-size: 13px;
         line-height: 1.6;
         text-align: center;
     }
 
     .progress-bar-goal {
         min-width: 70px;
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .progress-bar-summary {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .products-footer button {
         width: 100%;
-        font-size: 16px;
-        padding: 9px 10px;
+        font-size: 17px;
+        padding: 10px;
     }
 
     .products-footer span {
-        font-size: 12px;
+        font-size: 13px;
         margin-bottom: 8px;
         padding-top: 6px;
     }
@@ -309,11 +293,11 @@
 
 @media (max-width: 360px) {
     .products-form-title {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .products-footer button {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .packages-table {
@@ -321,7 +305,7 @@
     }
 
     .products {
-        padding-bottom: 170px;
+        padding-bottom: 200px;
     }
 }
 
