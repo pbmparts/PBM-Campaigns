@@ -112,3 +112,42 @@
     gap: 10px;
 }
 
+@media (max-width: 480px) {
+    body {
+        max-width: 100%;
+    }
+
+    .admin {
+        margin: 28px auto;
+        padding: 0 12px;
+    }
+
+    .admin-import-card,
+    .admin-campane {
+        width: 100%;
+        margin-top: 18px;
+        padding: 14px;
+    }
+
+    .admin-import-title {
+        font-size: 20px;
+    }
+
+    .admin-import-desc {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .admin-import-btn,
+    .admin-import-upload {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    .admin-campane-selector {
+        padding: 14px 16px;
+        margin-bottom: 14px;
+        font-size: 13px;
+    }
+}
+

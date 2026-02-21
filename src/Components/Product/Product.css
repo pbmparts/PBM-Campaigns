@@ -47,3 +47,31 @@
     cursor: pointer;
 }
 
+@media (max-width: 480px) {
+    .product-item {
+        padding: 12px 10px;
+        font-size: 15px;
+        gap: 8px;
+    }
+
+    .product-item-input {
+        gap: 2px;
+    }
+
+    #product-quantity-input {
+        width: 34px;
+        font-size: 13px;
+        padding: 4px;
+    }
+
+    .product-item-quantity-down,
+    .product-item-quantity-up {
+        padding: 3px;
+    }
+
+    .product-item-quantity-down img,
+    .product-item-quantity-up img {
+        width: 16px;
+    }
+}
+

@@ -147,3 +147,48 @@
     font-family: 'Vazir';
     font-size: 13px;
 }
+
+@media (max-width: 480px) {
+    .campane-item {
+        padding: 14px;
+    }
+
+    .camapne-item-title {
+        font-size: 18px;
+        margin: 8px 4px;
+    }
+
+    .campane-item-btns {
+        gap: 8px;
+        margin-top: 14px !important;
+    }
+
+    .campane-item-btns button {
+        font-size: 12px;
+    }
+
+    .campane-item-end {
+        width: calc(100% - 100px);
+        padding: 10px 12px;
+    }
+
+    .campane-item-download,
+    .campane-item-delete {
+        width: 46px;
+        min-width: 46px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 360px) {
+    .campane-item-end {
+        width: calc(100% - 92px);
+        font-size: 11px;
+    }
+
+    .campane-item-download,
+    .campane-item-delete {
+        width: 42px;
+        min-width: 42px;
+    }
+}

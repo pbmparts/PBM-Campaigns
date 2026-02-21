@@ -6,6 +6,11 @@
   padding: 0 20px;
 }
 
+.payment-choice img {
+  width: min(180px, 55vw);
+  height: auto;
+}
+
 .payment-choice-card {
   width: calc(100% - 50px);
   margin-top: 20px;
@@ -96,6 +101,72 @@
 .payment-download-btn:disabled,
 .payment-confirm-btn:disabled {
   opacity: 0.7;
+}
+
+@media (max-width: 480px) {
+  .payment-choice {
+    margin: 28px auto;
+    padding: 0 12px;
+  }
+
+  .payment-choice-card {
+    width: 100%;
+    margin-top: 16px;
+    padding: 16px 14px;
+  }
+
+  .payment-choice-card h1 {
+    font-size: 23px;
+    margin-bottom: 12px;
+  }
+
+  .payment-options {
+    gap: 8px;
+  }
+
+  .payment-option {
+    font-size: 13px;
+    padding: 10px 8px;
+  }
+
+  .payment-cash-hint {
+    font-size: 12px;
+    padding: 9px 10px;
+  }
+
+  .payment-choice-summary {
+    margin-top: 12px;
+    padding: 10px;
+  }
+
+  .payment-choice-summary p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .payment-download-btn {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .payment-confirm-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .payment-choice-card h1 {
+    font-size: 21px;
+  }
+
+  .payment-option {
+    font-size: 12px;
+  }
+
+  .payment-confirm-btn {
+    font-size: 15px;
+  }
 }
 
 @keyframes hintPulse {
