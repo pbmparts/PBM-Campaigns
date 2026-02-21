@@ -1,0 +1,119 @@
+.admin-campaign-customers {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.admin-campaign-customers-card {
+    width: calc(100% - 50px);
+    margin-top: 35px;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.admin-campaign-customers-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.admin-campaign-customers-back {
+    border: none;
+    border-radius: 8px;
+    background-color: #3b465e;
+    color: #fff;
+    font-family: 'Vazir';
+    font-size: 13px;
+    padding: 8px 14px;
+}
+
+.admin-campaign-customers-back:hover {
+    cursor: pointer;
+}
+
+.admin-campaign-customers-title {
+    font-family: 'Lalezar';
+    font-size: 24px;
+}
+
+.admin-campaign-customers-empty {
+    font-family: 'Vazir';
+    font-size: 13px;
+    color: #d1d5db;
+}
+
+.admin-campaign-customers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.admin-campaign-customer-item {
+    background-color: #2f3a52;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.admin-campaign-customer-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.admin-campaign-customer-toggle {
+    flex: 1;
+    border: none;
+    border-radius: 8px;
+    background-color: #253049;
+    color: #f5f5f5;
+    font-family: 'Vazir';
+    font-size: 13px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.admin-campaign-customer-toggle:hover {
+    cursor: pointer;
+}
+
+.admin-campaign-customer-download {
+    border: none;
+    border-radius: 8px;
+    background-color: #45A26A;
+    color: #fff;
+    font-family: 'Vazir';
+    font-size: 12px;
+    padding: 10px 12px;
+    min-width: 85px;
+}
+
+.admin-campaign-customer-download:hover {
+    cursor: pointer;
+}
+
+.admin-campaign-customer-items {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.admin-campaign-customer-items-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f2937;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-family: 'Vazir';
+    font-size: 13px;
+}

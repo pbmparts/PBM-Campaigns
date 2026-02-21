@@ -1,5 +1,5 @@
-.campane-item {
-    width: -webkit-fill-available;
+﻿.campane-item {
+    width: 100%;
     background-color: #3B465E;
     padding: 20px;
     border-radius: 10px;
@@ -9,6 +9,16 @@
     font-size: 20px;
     margin: 10px;
     font-family: 'Lalezar';
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.campane-item-title-hint {
+    font-family: 'Vazir';
+    font-size: 12px;
+    color: #d1d5db;
 }
 
 .campane-item-btns {
@@ -36,7 +46,7 @@
 }
 
 .campane-item-delete {
-    height: -webkit-fill-available;
+    height: 100%;
     padding: 5px 10px;
     width: 20%;
     border: none;
@@ -44,7 +54,7 @@
     background-color: #DF7E81;
 }
 .campane-item-download {
-    height: -webkit-fill-available;
+    height: 100%;
     padding: 5px 10px;
     width: 20%;
     border: none;
@@ -54,4 +64,86 @@
 
 .campane-item-disable {
     background-color: gray !important;
+}
+
+.campane-customers {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid #56617a;
+}
+
+.campane-customers-empty {
+    font-family: 'Vazir';
+    font-size: 13px;
+    color: #d1d5db;
+}
+
+.campane-customers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campane-customer-item {
+    background-color: #2f3a52;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.campane-customer-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.campane-customer-toggle {
+    flex: 1;
+    border: none;
+    border-radius: 8px;
+    background-color: #253049;
+    color: #f5f5f5;
+    font-family: 'Vazir';
+    font-size: 13px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.campane-customer-toggle:hover {
+    cursor: pointer;
+}
+
+.campane-customer-download {
+    border: none;
+    border-radius: 8px;
+    background-color: #45A26A;
+    color: #fff;
+    font-family: 'Vazir';
+    font-size: 12px;
+    padding: 10px 12px;
+    min-width: 85px;
+}
+
+.campane-customer-download:hover {
+    cursor: pointer;
+}
+
+.campane-customer-items {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campane-customer-items-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f2937;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-family: 'Vazir';
+    font-size: 13px;
 }

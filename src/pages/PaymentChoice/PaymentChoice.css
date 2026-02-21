@@ -1,0 +1,110 @@
+.payment-choice {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.payment-choice-card {
+  width: calc(100% - 50px);
+  margin-top: 20px;
+  padding: 24px 20px;
+  color: #fff;
+}
+
+.payment-choice-card h1 {
+  margin: 0 0 16px;
+  text-align: center;
+  font-family: 'Lalezar';
+  font-size: 30px;
+}
+
+.payment-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.payment-option {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: transparent;
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px 10px;
+  font-family: 'Vazir';
+  font-size: 14px;
+}
+
+.payment-option.active {
+  border-color: #45A26A;
+  background-color: rgba(69, 162, 106, 0.25);
+}
+
+.payment-cash-hint {
+  margin-top: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(229, 34, 41, 0.5);
+  background-color: rgba(229, 34, 41, 0.18);
+  padding: 10px 12px;
+  font-family: 'Vazir';
+  font-size: 13px;
+  text-align: center;
+  animation: hintPulse 1.1s ease-in-out infinite alternate;
+}
+
+.payment-choice-summary {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.payment-choice-summary p {
+  margin: 0 0 8px;
+  font-family: 'Vazir';
+}
+
+.payment-choice-summary p:last-child {
+  margin-bottom: 0;
+}
+
+.payment-confirm-btn {
+  width: 100%;
+  margin-top: 16px;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-family: 'Lalezar';
+  font-size: 18px;
+  color: #fff;
+  background-color: #45A26A;
+}
+
+.payment-download-btn {
+  width: 100%;
+  margin-top: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 11px;
+  font-family: 'Vazir';
+  font-size: 14px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.payment-download-btn:disabled,
+.payment-confirm-btn:disabled {
+  opacity: 0.7;
+}
+
+@keyframes hintPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(229, 34, 41, 0.35);
+  }
+  100% {
+    transform: scale(1.02);
+    box-shadow: 0 0 14px rgba(229, 34, 41, 0.45);
+  }
+}

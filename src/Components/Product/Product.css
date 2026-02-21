@@ -1,4 +1,4 @@
-.product-item {
+﻿.product-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,7 +38,7 @@
     background-color: transparent;
     border: none;
     padding: 5px;
-    height: -webkit-fill-available;
+    height: 100%;
 }
 .product-item-quantity-down img , .product-item-quantity-up img {
     width: 18px;
@@ -46,3 +46,4 @@
 .product-item-quantity-down:hover , .product-item-quantity-up:hover {
     cursor: pointer;
 }
+

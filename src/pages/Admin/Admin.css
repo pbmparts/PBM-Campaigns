@@ -1,4 +1,4 @@
-body {
+﻿body {
     background-color: #111827;
     max-width: 500px;
     margin: 0 auto;
@@ -12,37 +12,69 @@ body {
     padding: 0 20px;
 }
 
-.admin-campane-form {
-    width: 100%;
+.admin-import-card {
+    width: calc(100% - 50px);
+    margin-top: 35px;
+    border-radius: 12px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
+    gap: 14px;
 }
 
-#campane-name-input {
-    width: calc(100% - 50px);
-    padding: 14px 12px;
-    border-radius: 10px;
-    outline: none;
-    border: 1px solid #B0B0B0;
+.admin-import-title {
+    font-family: 'Lalezar';
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.admin-import-desc {
     font-family: 'Vazir';
+    font-size: 14px;
+    color: #d1d5db;
+    line-height: 1.8;
 }
 
-#campane-name-input::placeholder {
-    color: #5C5C5C;
+.admin-import-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.admin-campane-form button {
-    background-color: #E52229;
-    color: #eee;
-    width: calc(100% - 100px);
-    padding: 15px 20px;
-    margin-top: 10px;
+.admin-import-btn,
+.admin-import-upload {
+    width: 100%;
     border: none;
     border-radius: 10px;
-    font-family: 'Lalezar';
-    font-size: 18px;
+    padding: 12px 16px;
+    font-family: 'Vazir';
+    font-size: 14px;
+    text-align: center;
+}
+
+.admin-import-btn {
+    background-color: #45A26A;
+    color: #fff;
+}
+
+.admin-import-btn:hover {
+    cursor: pointer;
+}
+
+.admin-import-upload {
+    background-color: #3b465e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-import-upload:hover {
+    cursor: pointer;
+}
+
+.admin-import-upload input {
+    display: none;
 }
 
 .admin-campane {
@@ -51,12 +83,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .admin-campane-selector {
     background-color: #111827;
-    width: -webkit-fill-available;
+    width: 100%;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -80,76 +112,3 @@ body {
     gap: 10px;
 }
 
-/* Extra */
-.campane-packages {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.campane-packages-add {
-    background-color: transparent !important;
-    border: 1px solid #eee !important;
-    border-style: dashed !important;
-    padding: 10px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: start !important;
-    gap: 10px !important;
-    width: calc(100% - 50px) !important;
-}
-
-.campane-packages-add:hover {
-    cursor: pointer;
-}
-
-.campane-packages-add img {
-    padding: 10px;
-    background-color: #3B465E;
-    border-radius: 100px;
-}
-
-.campane-packages-list {
-    width: calc(100% - 50px);
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    gap: 10px;
-}
-
-.campane-packages-item {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    background: #3B465E;
-}
-
-.campane-packages-item>.row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.campane-packages-item-delete {
-    width: fit-content !important;
-    display: flex !important;
-    padding: 5px !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-.campane-packages-item-input {
-    background-color: #111827;
-    border-radius: 5px;
-    border: 1px solid #eee;
-    outline: none;
-    color: #eee;
-    padding:10px;
-    font-family: 'Vazir';
-}
-.campane-packages-item-minbuy, .campane-packages-item-discount {
-    width: 30%;
-}

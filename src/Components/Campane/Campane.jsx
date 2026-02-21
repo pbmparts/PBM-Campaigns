@@ -1,10 +1,12 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { supabase } from '../../lib/supabase'
 import { useModal } from '../Modal/useModal'
 import * as XLSX from 'xlsx'
 import './Campane.css'
 
 export default function Campane({ campaign, refresh }) {
+  const navigate = useNavigate()
   const [loading, setLoading] = useState(false)
   const [downloadLoading, setDownloadLoading] = useState(false)
   const { showAlert, showConfirm } = useModal()
@@ -68,7 +70,7 @@ export default function Campane({ campaign, refresh }) {
           id,
           user_name,
           phone,
-          order_items (
+          order_items!order_items_order_id_fkey (
             product,
             quantity
           )
@@ -90,8 +92,9 @@ export default function Campane({ campaign, refresh }) {
 
       const rows = []
 
-      data.forEach(order => {
-        order.order_items.forEach(item => {
+      data.forEach((order) => {
+        ;(order.order_items || []).forEach((item) => {
+          if (Number(item.quantity || 0) <= 0) return
           rows.push({
             campaign_name: campaign.name,
             user_name: order.user_name,
@@ -129,8 +132,22 @@ export default function Campane({ campaign, refresh }) {
           : '🔴'}
       </div>
 
-      <div className="camapne-item-title">
+      <div
+        className="camapne-item-title"
+        onClick={() => navigate(`/admin/campaign/${campaign.id}`)}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault()
+            navigate(`/admin/campaign/${campaign.id}`)
+          }
+        }}
+      >
         {campaign.name}
+        <span className='campane-item-title-hint'>
+          مشاهده لیست خریداران
+        </span>
       </div>
 
       <div className="campane-item-btns">
@@ -166,4 +183,3 @@ export default function Campane({ campaign, refresh }) {
     </div>
   )
 }
-
