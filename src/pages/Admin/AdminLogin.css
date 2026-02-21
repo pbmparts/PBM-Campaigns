@@ -6,11 +6,6 @@
   padding: 0 20px;
 }
 
-.admin-login img {
-  width: min(180px, 55vw);
-  height: auto;
-}
-
 .admin-login-form {
   width: calc(100% - 50px);
   display: flex;
@@ -56,46 +51,4 @@
 .admin-login-form button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
-}
-
-@media (max-width: 480px) {
-  .admin-login {
-    margin: 28px auto;
-    padding: 0 12px;
-  }
-
-  .admin-login-form {
-    width: 100%;
-    margin-top: 16px;
-    padding: 14px;
-    gap: 10px;
-  }
-
-  .admin-login-form label {
-    font-size: 18px;
-  }
-
-  .admin-login-form input {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  .admin-login-form button {
-    font-size: 16px;
-    padding: 9px 14px;
-  }
-}
-
-@media (max-width: 360px) {
-  .admin-login-form label {
-    font-size: 17px;
-  }
-
-  .admin-login-form input {
-    font-size: 13px;
-  }
-
-  .admin-login-form button {
-    font-size: 15px;
-  }
 }

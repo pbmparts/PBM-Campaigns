@@ -4,12 +4,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0 20px;
-    min-height: 100vh;
-}
-
-.products img {
-    width: min(180px, 55vw);
-    height: auto;
+    height: 100vh;
 }
 
 .products-form {
@@ -211,104 +206,6 @@
 .progress-bar-summary {
     margin-top: 8px;
     font-size: 14px;
-}
-
-@media (max-width: 480px) {
-    .products {
-        margin: 28px auto;
-        padding: 0 12px;
-    }
-
-    .products-form {
-        width: 100%;
-        padding: 14px;
-        margin-top: 14px;
-    }
-
-    .products-form-title {
-        margin-left: 0;
-        margin-bottom: 20px;
-        font-size: 18px;
-        width: 100%;
-    }
-
-    .products-form-list {
-        gap: 12px;
-    }
-
-    .packages-table-wrap {
-        width: 100%;
-        padding: 10px;
-        margin-top: 14px;
-        margin-bottom: 12px;
-        overflow-x: auto;
-    }
-
-    .packages-table {
-        min-width: 430px;
-        font-size: 12px;
-    }
-
-    .packages-table th,
-    .packages-table td {
-        padding: 7px 8px;
-    }
-
-    .products-footer {
-        padding: 8px 10px;
-    }
-
-    .footer-progressbar {
-        width: 100%;
-        margin-bottom: 12px;
-        font-size: 12px;
-    }
-
-    .progress-bar-title {
-        font-size: 12px;
-        line-height: 1.6;
-        text-align: center;
-    }
-
-    .progress-bar-goal {
-        min-width: 70px;
-        font-size: 12px;
-    }
-
-    .progress-bar-summary {
-        font-size: 12px;
-    }
-
-    .products-footer button {
-        width: 100%;
-        font-size: 16px;
-        padding: 9px 10px;
-    }
-
-    .products-footer span {
-        font-size: 12px;
-        margin-bottom: 8px;
-        padding-top: 6px;
-    }
-
-    .current-package-banner {
-        font-size: 12px;
-        padding: 7px 8px;
-    }
-}
-
-@media (max-width: 360px) {
-    .products-form-title {
-        font-size: 17px;
-    }
-
-    .products-footer button {
-        font-size: 15px;
-    }
-
-    .packages-table {
-        min-width: 390px;
-    }
 }
 
 @keyframes progressShine {
